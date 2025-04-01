@@ -1,4 +1,4 @@
-<script>
+<script lang="js">
 	import { Progress as ProgressPrimitive } from "bits-ui";
 	import { cn } from "../../lib/utils";
 

@@ -15,6 +15,7 @@ export interface PokemonStat {
   };
 }
 
+
 export interface PokemonAbility {
   ability: {
     name: string;
@@ -108,4 +109,9 @@ export function getPokemonTypes(pokemonList: Pokemon[]): string[] {
     });
   });
   return Array.from(types).sort();
+}
+export async function getPokemonById(id: string) {
+  const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
+  if (!res.ok) throw new Error("No se pudo obtener el Pokémon");
+  return await res.json();
 }

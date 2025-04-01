@@ -18,5 +18,5 @@
 			"$hooks": ["src/hooks"]
 		}
 	},
-	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte", "vite.config.js"]
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.svelte", "vite.config.js", "src/shadcn/progress/index.ts", "src/shadcn/progress/index.ts", "global.d.ts", "global.d.ts"]
 }
